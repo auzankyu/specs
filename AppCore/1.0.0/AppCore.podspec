@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   # spec.resource_bundles = {
   #   'AppCore' => ["AppCore/*.xcassets", "AppCore/**/*.xcassets"]
   # }
-  spec.static_framework = true
+  # spec.static_framework = true
   spec.dependency 'FirebaseAnalytics', '~> 10.11.0'
   spec.dependency 'FirebaseAuth', '~> 10.11.0'
   spec.dependency 'FirebaseFirestore', '~> 10.11.0'
