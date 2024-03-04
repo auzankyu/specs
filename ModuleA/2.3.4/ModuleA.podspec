@@ -14,8 +14,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.author       = { 'Author Name' => 'auzan@example.com' }
   spec.platform     = :ios, '11.0'
-  spec.source       = { :http => 'https://filebin.net/guiwngbunm30enxq/ModuleA-Framework-1.zip' }
-  spec.ios.vendored_frameworks = 'ModuleA.xcframework'
+  spec.source       = { :git => "https://github.com/auzankyu/ModuleA.git", :branch => "main" }
   spec.static_framework = true
   spec.dependency 'AppCore'
 end
