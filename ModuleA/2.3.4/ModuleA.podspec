@@ -15,6 +15,7 @@ Pod::Spec.new do |spec|
   spec.author       = { 'Author Name' => 'auzan@example.com' }
   spec.platform     = :ios, '11.0'
   spec.source       = { :git => "https://github.com/auzankyu/ModuleA.git", :branch => "main" }
+  spec.source_files = "ModuleA/**/*.swift"
   spec.static_framework = true
   spec.dependency 'AppCore'
 end
