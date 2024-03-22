@@ -18,7 +18,12 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   # spec.source       = { :path => '.' }
   spec.source       = { :git => "https://github.com/auzankyu/AppCore.git", :branch => "main" }
-  spec.source_files = "AppCore/**/*.swift"
+  # spec.source_files = "AppCore/**/*.swift"
+  s.preserve_paths = "AppCore.framework/*"
+  s.resources  = "AppCore.framework/*.bundle"
+
+  s.vendored_frameworks = 'AppCore.framework'
+  s.requires_arc = true
   # spec.resources    = ["AppCore/**/*.xib", "AppCore/**/*.storyboard"]
   # spec.resource_bundles = {
   #   'AppCore' => ["AppCore/*.xcassets", "AppCore/**/*.xcassets"]
