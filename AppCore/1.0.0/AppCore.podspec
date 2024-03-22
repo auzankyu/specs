@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Auzan" => "" }
   spec.platform     = :ios, "11.0"
   # spec.source       = { :path => '.' }
-  spec.source       = { :git => "https://github.com/auzankyu/AppCore.git", :branch => "main" }
+  spec.source       = { :http => "https://filebin.net/bmxhrzmltnitwrhu/AppCore.framework.zip" }
   # spec.source_files = "AppCore/**/*.swift"
   spec.preserve_paths = "AppCore.framework/*"
   spec.resources  = "AppCore.framework/*.bundle"
